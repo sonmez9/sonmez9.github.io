@@ -3,33 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İmdat Sönmez | Engineering Portfolio</title>
+    <title>İmdat Sönmez | Engineering & Systems</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav>
-        <div class="logo">IS</div>
-        <ul>
-            <li><a href="#projects">Projeler</a></li>
-            <li><a href="#about">Yaklaşımım</a></li>
-            <li><a href="#contact">İletişim</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">İS</div>
+            <ul>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#approach">Yaklaşımım</a></li>
+                <li><a href="assets/docs/Imdat_Sonmez_CV.pdf" target="_blank" class="cv-link">Özgeçmiş</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header id="hero">
-        <h1>Sadece kod değil, çözüm inşa ediyorum.</h1>
-        <p>3D Dijital İkizlerden IoT sistemlerine, verinin olduğu her yerde mühendislik süreçlerini yönetiyorum.</p>
+    <header class="hero">
+        <div class="container">
+            <h1>Sistemleri Veri ve Mühendislikle İnşa Ediyorum</h1>
+            <p>Donanım seviyesinden bulut tabanlı 3D görselleştirmeye, derin öğrenme modellerinden çapraz platform mimarilere uzanan çözüm odaklı bir yaklaşım.</p>
+        </div>
     </header>
 
-    <section id="projects">
-        </section>
-<div class="project-card">
-    <h3>İstanbul Havalimanı 3D Dijital İkiz Platformu</h3>
-    <p><strong>Problem:</strong> Devasa mimari verilerin web ortamında performans kaybı yaşanmadan 3D görselleştirilmesi.</p>
-    <p><strong>Çözüm:</strong> 3D Tiles streaming ve LOD (Level of Detail) yönetimi ile veri transferini optimize ettim. CesiumJS kullanarak yerel modelleri WGS84 koordinat sistemine milimetrik hassasiyetle entegre ettim.</p>
-    <p><strong>Teknolojiler:</strong> ASP.NET Core, CesiumJS, 3D Tiles, C#.</p>
-    <a href="https://github.com/sonmez9/Istanbul-Airport-3D-Digital-Twin-Visualization-Platform" target="_blank">Kodları İncele</a>
-</div>
-    <script src="script.js"></script>
+    <section id="projects" class="container">
+        <h2 class="section-title">Öne Çıkan Uygulamalar</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>İstanbul Havalimanı 3D Dijital İkiz Platformu</h3>
+                    <p class="description">Karmaşık operasyonel süreçlerin web tabanlı 3D ortamda izlenmesi için geliştirilmiş yüksek performanslı görselleştirme sistemi.</p>
+                    <ul class="tech-stack">
+                        <li>ASP.NET Core</li>
+                        <li>CesiumJS</li>
+                        <li>3D Tiles</li>
+                        <li>LOD Management</li>
+                    </ul>
+                    <p class="impact"><strong>Teknik Başarı:</strong> Devasa mimari verilerin 60 FPS performansla akıtılması ve milimetrik hassasiyette WGS84 koordinat entegrasyonu.</p>
+                    <a href="https://github.com/sonmez9/Istanbul-Airport-3D-Digital-Twin-Visualization-Platform" target="_blank" class="github-link">Kodları İncele</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Yapay Zeka Tabanlı EKG Analiz Sistemi (TÜBİTAK)</h3>
+                    <p class="description">EKG sinyallerini Vision Transformer (ViT) mimarisi kullanarak sınıflandıran yorumlanabilir karar destek sistemi.</p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>PyTorch</li>
+                        <li>Vision Transformers (ViT)</li>
+                        <li>Explainable AI (Grad-CAM)</li>
+                    </ul>
+                    <p class="impact"><strong>Teknik Başarı:</strong> Sinyal verilerinin STFT ile spektrogramlara dönüştürülmesi ve klinik doğrulama için odak alanlarının görselleştirilmesi.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>IoT Destekli Akıllı Tarım Sistemi (Domates Doktoru)</h3>
+                    <p class="description">ESP32-CAM ve Derin Öğrenme entegrasyonu ile bitki hastalıklarının anlık teşhisi.</p>
+                    <ul class="tech-stack">
+                        <li>C++ (Arduino)</li>
+                        <li>ESP32</li>
+                        <li>TensorFlow</li>
+                        <li>MobileNetV2</li>
+                    </ul>
+                    <p class="impact"><strong>Teknik Başarı:</strong> Gömülü sistemlerde PSRAM yönetimi ve gerçek zamanlı telemetri optimizasyonu.</p>
+                    <a href="https://github.com/sonmez9/Automated-Classification-and-Prediction-Application" target="_blank" class="github-link">Kodları İncele</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>3D Model Optimizasyon ve Otomasyon Aracı</h3>
+                    <p class="description">GLB dosyalarını web-ready 3D Tiles formatına dönüştüren veri işleme hattı.</p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>MeshLab</li>
+                        <li>3D Tiles</li>
+                        <li>Algorithms</li>
+                    </ul>
+                    <p class="impact"><strong>Teknik Başarı:</strong> Mesh Decimation algoritmaları ile poligon karmaşıklığında %80 oranında azalma.</p>
+                    <a href="https://github.com/sonmez9/3D-Model-Optimization-and-Tileset-Converter" target="_blank" class="github-link">Kodları İncele</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="approach" class="container">
+        <h2 class="section-title">Teknik Yetkinlikler</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h4>Diller</h4>
+                <p>C#, Python, JavaScript, SQL, C++ (Arduino) </p>
+            </div>
+            <div class="skill-group">
+                <h4>Frameworks</h4>
+                <p>ASP.NET Core MVC, .NET MAUI, Flask, Streamlit, TensorFlow/Keras </p>
+            </div>
+            <div class="skill-group">
+                <h4>Kavramlar</h4>
+                <p>Digital Twin, GIS, IoT Protocols, Auto-ML, Computer Graphics </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 İmdat Sönmez | <a href="https://github.com/sonmez9">GitHub</a> | <a href="https://linkedin.com/in/imdatsonmez">LinkedIn</a></p>
+        </div>
+    </footer>
+
 </body>
 </html>
